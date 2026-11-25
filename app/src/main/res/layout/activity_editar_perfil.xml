@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnAtrasEditarPerfil"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_circulo_blanco"
+                android:contentDescription="Regresar"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="Datos y dirección"
+                android:textColor="@color/tv_texto_principal"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etNombreEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Nombre(s) *"
+            android:paddingHorizontal="14dp" />
+
+        <EditText
+            android:id="@+id/etApPaternoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Apellido paterno *"
+            android:paddingHorizontal="14dp" />
+
+        <EditText
+            android:id="@+id/etApMaternoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Apellido materno"
+            android:paddingHorizontal="14dp" />
+
+        <EditText
+            android:id="@+id/etTelefonoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Teléfono (10 dígitos)"
+            android:inputType="phone"
+            android:paddingHorizontal="14dp" />
+
+        <EditText
+            android:id="@+id/etCalleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Calle *"
+            android:paddingHorizontal="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etNumExtEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_redondeado"
+                android:hint="Núm. Exterior"
+                android:paddingHorizontal="14dp" />
+
+            <EditText
+                android:id="@+id/etCPEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_redondeado"
+                android:hint="Código Postal"
+                android:inputType="number"
+                android:paddingHorizontal="14dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etColoniaEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Colonia"
+            android:paddingHorizontal="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCiudadEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_redondeado"
+                android:hint="Ciudad (Ej. Huejutla)"
+                android:paddingHorizontal="14dp" />
+
+            <EditText
+                android:id="@+id/etEstadoEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_redondeado"
+                android:hint="Estado (Ej. Hidalgo)"
+                android:paddingHorizontal="14dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etReferenciasEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Referencias de entrega"
+            android:paddingHorizontal="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_boton_azul_pill"
+            android:text="Guardar cambios"
+            android:textAllCaps="false"
+            android:textColor="@color/tv_blanco"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
