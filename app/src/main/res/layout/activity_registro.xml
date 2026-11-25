@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btnAtrasRegistro"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_circulo_blanco"
+            android:contentDescription="Regresar"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Crea tu cuenta\nTecnoVentas"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Regístrate en segundos para guardar favoritos y comprar con envío gratis."
+            android:textColor="@color/tv_texto_secundario"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nombre(s) *"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNombreReg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="12dp"
+            android:hint="Ej. Carlos"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/tv_texto_principal"
+            android:textColorHint="@color/tv_texto_hint"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido paterno *"
+                    android:textColor="@color/tv_texto_principal"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etApPaternoReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input_redondeado"
+                    android:hint="Ej. Mendoza"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/tv_texto_principal"
+                    android:textColorHint="@color/tv_texto_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido materno"
+                    android:textColor="@color/tv_texto_principal"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etApMaternoReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input_redondeado"
+                    android:hint="Ej. Torres"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/tv_texto_principal"
+                    android:textColorHint="@color/tv_texto_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Correo electrónico *"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCorreoReg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="12dp"
+            android:hint="c.mendoza@email.com"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/tv_texto_principal"
+            android:textColorHint="@color/tv_texto_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Teléfono"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTelefonoReg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="12dp"
+            android:hint="7711512536"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/tv_texto_principal"
+            android:textColorHint="@color/tv_texto_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Contraseña *"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPasswordReg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp"
+            android:hint="Mínimo 6 caracteres"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/tv_texto_principal"
+            android:textColorHint="@color/tv_texto_hint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Pregunta de seguridad *"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnPreguntaSeguridad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Respuesta de seguridad *"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRespuestaSeguridad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_redondeado"
+            android:hint="Escribe tu respuesta secreta"
+            android:inputType="text"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/tv_texto_principal"
+            android:textColorHint="@color/tv_texto_hint"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/chkTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:buttonTint="@color/tv_azul_primario"
+            android:checked="true"
+            android:text="Acepto los Términos y Condiciones y la Política de Privacidad de TecnoVentas."
+            android:textColor="@color/tv_texto_secundario"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/pbRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegistrarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_boton_azul_pill"
+            android:text="Registrarse"
+            android:textAllCaps="false"
+            android:textColor="@color/tv_blanco"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIrLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="¿Ya tienes una cuenta? Iniciar sesión"
+            android:textColor="@color/tv_texto_principal"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
