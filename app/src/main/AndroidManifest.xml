@@ -12,21 +12,49 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Appmoviltecnoventas">
+        android:theme="@style/Theme.Appmoviltecnoventas"
+        android:usesCleartextTraffic="true">
+
+        <!-- Pantalla inicial: verifica sesión y redirige a MainActivity si ya está logueado -->
         <activity
-            android:name=".Vista.MainActivity"
+            android:name=".Vista.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Vista.RegistroActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Vista.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Vista.ComprarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Vista.BuscarActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Vista.DetalleProductoActivity"
+            android:exported="false" />
+
+        <!-- Actividad de tu compañero (se conserva para evitar conflictos en Git) -->
         <activity
             android:name=".item_bolsa"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>

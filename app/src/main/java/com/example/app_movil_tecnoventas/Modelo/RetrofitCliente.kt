@@ -4,7 +4,9 @@ import com.example.app_movil_tecnoventas.InterfaceApi.ApiService
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
+import okhttp3.OkHttpClient
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
+import java.util.concurrent.TimeUnit
 import retrofit2.create
 
 object RetrofitCliente {
@@ -15,6 +17,12 @@ object RetrofitCliente {
         coerceInputValues = true
         isLenient = true
     }
+
+    private val okHttpClient = OkHttpClient.Builder()
+        .connectTimeout(20, TimeUnit.SECONDS)
+        .readTimeout(20, TimeUnit.SECONDS)
+        .writeTimeout(20, TimeUnit.SECONDS)
+        .build()
 
     val apiService: ApiService by lazy {
         val contentType = "application/json".toMediaType()
