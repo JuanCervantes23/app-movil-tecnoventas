@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="tv_azul_primario">#0B36F4</color>
+    <color name="tv_azul_oscuro">#071D49</color>
+    <color name="tv_azul_suave">#EEF2FF</color>
+    <color name="tv_fondo">#F6F7FB</color>
+    <color name="tv_blanco">#FFFFFF</color>
+    <color name="tv_texto_principal">#111827</color>
+    <color name="tv_texto_secundario">#6B7280</color>
+    <color name="tv_texto_hint">#9CA3AF</color>
+    <color name="tv_input_fondo">#EFEFF4</color>
+    <color name="tv_borde">#E5E7EB</color>
+    <color name="tv_verde_texto">#15803D</color>
+    <color name="tv_verde_fondo">#DCFCE7</color>
+    <color name="tv_rojo_descuento">#DC2626</color>
+    <color name="tv_rojo_fondo">#FEE2E2</color>
+    <color name="tv_naranja_texto">#EA580C</color>
+    <color name="tv_naranja_fondo">#FFF7ED</color>
+    <color name="tv_amarillo_estrella">#F59E0B</color>
 </resources>
